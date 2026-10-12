@@ -5,7 +5,11 @@ print("To exit the program type quit")
 
 while True:
     user_input = input("Say something: ")
-    print(f"You said: {user_input}")
+    lower = user_input.lower()
+    if lower == 'quit':
+        break
+    else:
+        print(f"You said: {user_input}")
 
 
 # As written the program has an infinite loop.
